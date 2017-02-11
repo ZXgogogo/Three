@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+				width: 100%;
+			}
+			.wrap{
+				width: 100%;
+			}
+			.nav{
+				width: 100%;
+				background-color: black;
+				height: 60px;
+				border: 1px solid black;
+			}
+			.nav ul{
+				margin-left: 150px;
+				margin-top: 20px;
+			}
+			.nav ul li{
+				list-style-type: none;
+				color: white;
+				width: 100px;
+				float: left;
+				text-align: center;
+				font-size: 15px;
+			}
+		
+			.nav ul #first:hover{
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="nav">
+			<ul>
+				<li>书吧</li>
+				<a href="1.index.php"><li id="first">网站首页</li></a>
+				<li>关于我们</li>
+				<a href="2.fenye.php"><li>图书展示</li></a>
+				<li>联系我们</li>
+				<a href="53.car.php">
+				<li>购物车</li>
+				</a>
+				<a href="4.Add1.html"><li>添加图书</li></a>
+			</ul>
+			</div>
+<div class="box">
+		
+			<h1>添加图书</h1>
+			<form action="6.Shangchuan.php" method="post" enctype="multipart/form-data">
+			书名：<input type="text" name="name" id="name" value="" /> 简介：
+				<input type="text" name="intro" id="" value="" /> 作者：
+				<input type="text" name="writer" id="" value=""/> 出版社：
+				<input type="text" name="chubanshe" id="" value=""/> 出版日期：
+				<input type="text" name="date" id="" value=""/> 价格：
+				<input type="text" name="price" id="" value=""/> ISBN:
+				<input type="text" name="ISBN" id="" value=""/> 书籍图片：
+				<input type="file" name="picture" id="imgs" value=""/>
+				<input type="submit" value="添加"/>
+			</form>
+		</div>
+		</div>
+	</body>
+
+</html>
